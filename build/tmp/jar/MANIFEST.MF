@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: forgetesting
+Specification-Vendor: forgetestingsareus
+Specification-Version: 1
+Implementation-Title: forge-testing
+Implementation-Version: 1.0
+Implementation-Vendor: forgetestingsareus
+Implementation-Timestamp: 2023-04-01T19:07:13+0200
+
