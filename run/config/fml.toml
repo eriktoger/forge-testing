@@ -3,5 +3,6 @@ versionCheck = true
 # does the splashscreen run
 splashscreen = true
 disableOptimizedDFU = true
+defaultConfigPath = "defaultconfigs"
 maxThreads = -1
 
