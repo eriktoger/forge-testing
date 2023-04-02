@@ -1,5 +1,6 @@
 package com.example.forgetesting;
 
+import com.example.forgetesting.block.ModBlocks;
 import com.example.forgetesting.item.ModCreativeModeTabs;
 import com.example.forgetesting.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -32,6 +33,7 @@ public class ForgeTesting
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -55,10 +57,14 @@ public class ForgeTesting
             event.accept(ModItems.BLACK_OPAL);
             event.accept(ModItems.RAW_BLACK_OPAL);
         }
+        if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.BLACK_OPAL_BLOCK);
+        }
 
         if(event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB){
             event.accept(ModItems.BLACK_OPAL);
             event.accept(ModItems.RAW_BLACK_OPAL);
+            event.accept(ModBlocks.BLACK_OPAL_BLOCK);
         }
 
     }
