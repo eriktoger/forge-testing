@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "forgetesting:black_opal_ore",
+    "forgetesting:black_opal_block",
+    "forgetesting:deepslate_black_opal_ore",
+    "forgetesting:netherrack_black_opal_ore",
+    "forgetesting:endstone_black_opal_ore"
+  ]
+}
